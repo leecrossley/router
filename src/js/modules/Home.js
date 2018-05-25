@@ -68,7 +68,7 @@ class Home extends React.Component {
         };
         return (
             <div>
-                <AppBar title="VEON Smart Box" menu={true} />
+                <AppBar title="" menu={true} />
                 <NetworkStatus
                     devices={this.state.wireless.length}
                 />

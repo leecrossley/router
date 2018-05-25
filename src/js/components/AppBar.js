@@ -47,15 +47,21 @@ class AppBar extends React.Component {
 
     render(): React.Element {
         return (
-            <Bar
-                onTitleTouchTap={window.StatusBar.styleLightContent}
-                className="appbar"
-                iconElementRight={this.props.menu ? this.getMoreMenu() : null}
-                iconElementLeft={this.props.icon}
-                zDepth={this.props.noShadow ? 0 : 1}
-                showMenuIconButton={this.props.icon ? true : false}
-                title={this.props.title}
-            />
+            <div className="nav-container">
+                {
+                    this.props.title === "" &&
+                    <img className="eir-logo" src="img/eir-logo.png" />
+                }
+                <Bar
+                    onTitleTouchTap={window.StatusBar.styleLightContent}
+                    className="appbar"
+                    iconElementRight={this.props.menu ? this.getMoreMenu() : null}
+                    iconElementLeft={this.props.icon}
+                    zDepth={this.props.noShadow ? 0 : 1}
+                    showMenuIconButton={this.props.icon ? true : false}
+                    title={this.props.title}
+                />
+            </div>
         );
     }
 }

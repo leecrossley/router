@@ -1,9 +1,9 @@
-$yellow:        #ffcc00;
-$yellow-dark:   #ffb612;
-$pink:          #D7054C;
-$blue:	        #00B0C8;
+$yellow:        #FEC52E;
+$yellow-dark:   #FAA129;
+$pink:          #E525B1;
+$blue:	        #2B67B3;
 $dark-grey:     #C3C3C3;
-$background:    #ECEDEC;
+$background:    #ECECEC;
 $text:          #25262A;
 $white:         #FFF;
 
@@ -11,23 +11,36 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.eir-logo {
+    height: 72px;
+    top: -4px;
+    left: 20px;
+    z-index: 99999;
+    position: absolute;
+}
+
 #app {
     background-color: $background;
-    border-top: 44px solid #000000;
     box-sizing: border-box;
 }
 
 .appbar {
-  background-color: #25262A;
+  background-color: #25262A !important;
 
 	h1 {
 		font-size: 20px !important;
 	}
 }
 
+.nav-container {
+    position: relative;
+    border-top: 44px solid #000000;
+}
+
 .navbar {
-	position: absolute;
+	  position: absolute;
     bottom: 0;
+    padding-bottom: 20px;
 
     button {
         padding-top: 8px !important;
@@ -69,14 +82,14 @@ body {
 .network-status {
     position: relative;
     width: 100%;
-    height: 345px;
+    height: 400px;
     background: $background;
-    background: -webkit-linear-gradient(top, $background 0%, $background 55%, darken($background, 5%) 70%, $background 80%);
-    border-bottom: 1px solid darken($background, 5%);
+    background: -webkit-linear-gradient(top, $background 0%, $background 55%, lighten($background, 5%) 70%, $background 80%);
+    border-bottom: 1px solid lighten($background, 5%);
 
     .network-status-text {
         text-align: center;
-        padding: 2rem 1.5rem 0 1.5rem;
+        padding: 2.5rem 1.5rem 0 1.5rem;
         font-size: 28px;
         font-weight: 400;
         line-height: 120%;
@@ -106,14 +119,14 @@ body {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 250px;
-        background: transparent url("../img/gateway.png") -44px 20px no-repeat;
+        height: 280px;
+        background: transparent url("../img/gateway.png") -68px 20px no-repeat;
         background-size: cover;
     }
 
     .network-status-counters {
         position: absolute;
-        bottom: 10.6rem;
+        top: 6.5rem;
         padding-left: 3.5rem;
     }
 }
@@ -140,7 +153,7 @@ body {
         color: #777;
         font-size: 12.5px;
         margin-bottom: 0.75rem;
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
         border-radius: 0 !important;
 
         button {
@@ -255,14 +268,14 @@ body {
 }
 
 .NetworkMap {
-    margin-top: -21.5rem;
+    margin-top: -24rem;
     position: absolute;
     stroke-width: 0.4;
     width: 100%;
     height: 100%;
 }
 .NetworkMap text {
-    fill: #333;
+    fill: $text;
 }
 .NetworkMap .indicator {
     fill: $text;
@@ -272,7 +285,7 @@ body {
     filter:url(#dropshadow);
 }
 .NetworkMap .on {
-    fill: $blue;
+    fill: $pink;
 }
 .NetworkMap .off {
     fill: #ffcb05;
@@ -284,7 +297,7 @@ body {
     fill:none;
 }
 .NetworkMap .outline.on {
-    stroke: $blue;
+    stroke: $pink;
 }
 .NetworkMap .outline.off {
     stroke: #ffcb05;
