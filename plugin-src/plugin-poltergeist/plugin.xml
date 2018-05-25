@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="plugin-poltergeist" version="0.0.1">
+    <name>Poltergeist</name>
+    <engines>
+        <engine name="cordova" version=">=5.0.0" />
+    </engines>
+    <js-module src="www/poltergeist.js" name="Poltergeist">
+        <clobbers target="poltergeist" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Poltergeist">
+                <param name="android-package" value="com.presciense.poltergeist.Poltergeist" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+        <source-file src="src/android/Poltergeist.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/JavaCallback.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/JavaCallbackHandler.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/PoltergeistThreadListener.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/PoltergeistThread.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/SWIGTYPE_p_Client.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/consumer_client.java" target-dir="src/com/presciense/poltergeist" />
+        <source-file src="src/android/consumer_clientJNI.java" target-dir="src/com/presciense/poltergeist" />
+
+        <source-file src="libs/armeabi/libconsumer_client.so" target-dir="libs/armeabi-v7a/" />
+        <source-file src="libs/armeabi/libconsumer_client_wrap.so" target-dir="libs/armeabi-v7a/" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Poltergeist">
+                <param name="ios-package" value="Poltergeist" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <!-- tmp -->
+        <resource-file src="tmp/000014d100000001.cid" />
+        <resource-file src="tmp/000014d100000001.p12" />
+        <resource-file src="tmp/stack.0.der" />
+        <resource-file src="tmp/stack.1.der" />
+        <resource-file src="tmp/000014d100000001.crt.pem" />
+        <resource-file src="tmp/000014d100000001.key.pem" />
+        <resource-file src="tmp/root.crt.pem" />
+        <!-- / tmp -->
+        <source-file src="src/ios/Poltergeist.swift" />
+        <header-file src="src/ios/consumer_client.h" />
+        <source-file src="src/ios/libconsumer_client-aarch64.a" framework="true" />
+        <source-file src="src/ios/libconsumer_client-armv7.a" framework="true" />
+        <!--<source-file src="src/ios/libsqlite3-aarch64.a" framework="true" />
+        <source-file src="src/ios/libsqlite3-armv7.a" framework="true" />-->
+    </platform>
+</plugin>

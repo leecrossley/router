@@ -1,0 +1,76 @@
+{
+  "layout": "MenuLayout",
+  "modules": [
+    {
+      "name": "Signin",
+      "path": "signin",
+      "props": {
+        "hideMenu": true
+      }
+    },
+    {
+      "name": "Phone",
+      "path": "phone",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "Wifi",
+      "path": "wifi",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "Network",
+      "path": "network",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "Schedule",
+      "path": "schedule",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "Support",
+      "path": "support",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "Settings",
+      "path": "settings(/:tab)",
+      "props": {
+        "menuItem": true
+      }
+    },
+    {
+      "name": "MyVodafone",
+      "path": "my-vodafone/:type"
+    },
+    {
+      "name": "Diagnostics",
+      "path": "diagnostics"
+    },
+    {
+      "name": "Intro",
+      "path": "intro/:type/:subType",
+      "props": {
+        "hideMenu": true
+      }
+    },
+    {
+      "name": "Feedback",
+      "path": "feedback",
+      "props": {
+        "menuItem": true
+      }
+    }
+  ]
+}

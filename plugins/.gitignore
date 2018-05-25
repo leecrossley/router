@@ -1,0 +1,10 @@
+.DS_Store
+
+plugin-poltergeist/obj/
+
+plugin-tromp/
+plugin-wifi/
+plugin-poltergeist/
+
+android.json
+ios.json

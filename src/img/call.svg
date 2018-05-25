@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="network-list" viewBox="0 0 80 80" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="80px" height="80px">
+	<g id="Layer%201">
+		<path id="Shape%203" d="M 29.6174 29.1257 L 36.0917 22.8976 L 27.593 10.997 L 17.6932 18.0138 C 17.6932 18.0138 13.0261 26.9153 27.9096 48.4154 L 27.8805 48.4372 C 28.0043 48.611 28.6142 49.3975 28.6142 49.3975 C 44.1301 70.4517 54.1028 68.9809 54.1028 68.9809 L 63.9999 61.97 L 55.5026 50.0634 L 47.4709 54.1227 L 38.5471 41.6199 L 29.6174 29.1257 Z" fill="#ffffff"/>
+	</g>
+</svg>

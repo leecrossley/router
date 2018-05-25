@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="plugin-wifi" version="0.0.1">
+    <name>Wifi</name>
+    <engines>
+        <engine name="cordova" version=">=5.0.0" />
+    </engines>
+    <js-module src="www/wifi.js" name="Wifi">
+        <clobbers target="wifi" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Wifi">
+                <param name="android-package" value="com.presciense.wifi.Wifi" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+        </config-file>
+        <source-file src="src/android/Wifi.java" target-dir="src/com/presciense/wifi" />
+    </platform>
+</plugin>

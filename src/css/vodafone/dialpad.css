@@ -1,0 +1,123 @@
+#dialpad.tab {
+    background: #FFF;
+}
+
+.dial-pad-wrap *,
+.dial-pad-wrap *:before,
+.dial-pad-wrap *:after {
+    box-sizing: border-box
+}
+
+.dial-pad-wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.dial-pad-wrap .dial-pad {
+    padding: 15px;
+}
+
+.dial-pad-wrap .dial-pad {
+    height: 100%;
+    padding: 40px 40px 0;
+}
+
+.dial-pad-wrap .dial-screen {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: right;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dial-pad-wrap .dial-table {
+    width: 100%;
+    display: table;
+}
+
+.dial-pad-wrap .dial-table .dial-table-row {
+    display: table-row;
+}
+
+.dial-pad-wrap .dial-table .dial-table-col {
+    cursor: default;
+    width: 33.33%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap {
+    display: block;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.dial-pad-wrap .dial-table .dial-table-col .dial-key {
+    font-size: 28px;
+    font-weight: 400;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+.dial-pad-wrap .dial-table .no-sub-key .dial-key {
+    min-height: 57px;
+    line-height: 52px;
+}
+
+.dial-pad-wrap .dial-table .dial-sub-key {
+    color: #aaa;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.dial-pad-wrap .no-sub-key .dial-sub-key {
+    display: none;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap,
+.dial-pad-wrap .dial-table .dial-key-wrap .dial-key
+.dial-pad-wrap .dial-table .dial-key-wrap .dial-sub-key {
+    transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap.active-state {
+    color: #FFF;
+    background: #8FAE0F;
+    transition: none;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap.active-state .dial-sub-key {
+    color: #FFF;
+    transition: none;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap.dial-button-call {
+    background: #8FAE0F!important;
+}
+
+.dial-pad-wrap .dial-table .dial-key-wrap.dial-button-backspace {
+    background: transparent!important;
+}
+
+@media only screen and (max-device-height : 550px) {
+    .dial-pad-wrap .dial-pad {
+        padding-top: 10px;
+    }
+    .dial-pad-wrap .dial-table .dial-key-wrap,
+    .dial-pad-wrap .dial-screen {
+        margin-bottom: 4px;
+    }
+}
+
+@media only screen and (max-device-height : 580px) {
+    .dial-pad-wrap .dial-pad {
+        padding-top: 20px;
+    }
+}

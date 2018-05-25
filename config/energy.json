@@ -1,0 +1,9 @@
+{
+  "layout": "EnergyDemo",
+  "modules": [
+    {
+      "name": "Signin",
+      "path": "signin"
+    }
+  ]
+}

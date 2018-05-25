@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="plugin-tromp" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Tromp</name>
+    <description>Making Android Great Again!</description>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Tromp">
+                <param name="android-package" value="com.presciense.tromp.Tromp" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.RECOVERY" />
+            <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+            <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+            <uses-permission android:name="android.permission.REBOOT" />
+        </config-file>
+        <source-file src="src/android/Tromp.java" target-dir="src/com/presciense/tromp" />
+    </platform>
+</plugin>

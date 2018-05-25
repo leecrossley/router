@@ -1,0 +1,6 @@
+git_url "git@github.com:presciense/certs"
+
+app_identifier "com.presciense.veon"
+username "lee.crossley@presciense.com"
+
+force_for_new_devices true

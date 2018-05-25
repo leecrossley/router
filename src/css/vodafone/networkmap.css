@@ -1,0 +1,294 @@
+#map.tab {
+    background: #FFF;
+}
+
+.network-container {
+    padding: 55px 30px 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 380px;
+    top: 50%;
+    position: relative;
+}
+
+.network-outer {
+    position: relative;
+    border: 1px solid #E1E2E2;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 51%;
+    display: table;
+}
+
+.network-inner {
+    position: absolute;
+    left: 28%;
+    top: 28%;
+    border: 1px solid #E1E2E2;
+    box-sizing: border-box;
+    width: 44%;
+    margin: 0 auto;
+    height: 44%;
+    border-radius: 50%;
+    background-color: #FFF;
+    background-size: 80%;
+    background-position: 50% 45%;
+    background-clip: padding-box;
+}
+
+.network-inner:before {
+    content: "";
+    position: absolute;
+    border: 6px solid #FFF;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-radius: 50%;
+}
+
+.signal-bars {
+    display: inline-block;
+    height: 25px;
+    width: 40px;
+    top: 20%;
+    position: relative;
+
+}
+
+.signal-bars div {
+    width: 4px;
+    min-height: 20%;
+    border-radius: 3px;
+    margin: 1px;
+    padding: 0;
+    display: inline-block;
+}
+
+.signal-bars div.first-bar {
+    height: 20%;
+}
+
+.signal-bars div.second-bar {
+    height: 40%;
+}
+
+.signal-bars div.third-bar {
+    height: 60%;
+}
+
+.signal-bars div.fourth-bar {
+    height: 80%;
+}
+
+.good div {
+    background-color: #8FAE0F;
+}
+
+.ok div {
+    background-color: #FECB00;
+}
+
+.bad div {
+    background-color: #E60000;
+}
+
+.three-bars div.fourth-bar,
+.one-bar div:not(.first-bar),
+.two-bars div:not(.first-bar):not(.second-bar) {
+    background-color: #d9d9d9;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+}
+
+.indicator {
+    position: absolute;
+    border: 2px solid #8FAE0F;
+    width: 22%;
+    height: 0;
+    padding-bottom: 22%;
+    border-radius: 50%;
+    background-color: #FFF;
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+}
+
+.indicator:before {
+    content: "";
+    position: absolute;
+    border: 6px solid #FFF;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 50%;
+}
+
+.indicator-wifi {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    background: #FFF url("../img/network-map-wifi.svg") 50% 50% / 60% 60% no-repeat;
+}
+
+.indicator-guest {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    background: #FFF url("../img/network-map-guest.svg") 50% 50% / 60% 60% no-repeat;
+}
+
+.indicator-phone {
+    position: absolute;
+    bottom: 6%;
+    left: 6%;
+    background: #FFF url("../img/network-map-phone.svg") 50% 50% / 75% 75% no-repeat;
+}
+
+.indicator-cabled {
+    position: absolute;
+    bottom: 6%;
+    right: 6%;
+    background: #FFF url("../img/network-map-cabled.svg") 50% 50% / 75% 75% no-repeat;
+}
+
+.indicator.indicator-off {
+    border-color: #D9D9D9;
+    -webkit-animation: none;
+    animation: none;
+}
+
+.indicator-wifi .indicator-title,
+.indicator-wifi .indicator-detail,
+.indicator-phone .indicator-title,
+.indicator-phone .indicator-detail {
+    right: 0;
+}
+
+.indicator-title,
+.indicator-detail {
+    position: absolute;
+    white-space: nowrap;
+}
+
+.indicator-wifi .indicator-title,
+.indicator-wifi .indicator-detail,
+.indicator-guest .indicator-title,
+.indicator-guest .indicator-detail {
+    top: -70%;
+}
+
+.indicator-phone .indicator-title,
+.indicator-phone .indicator-detail,
+.indicator-cabled .indicator-title,
+.indicator-cabled .indicator-detail {
+    bottom: -70%;
+}
+
+.indicator-phone .indicator-title,
+.indicator-cabled .indicator-title {
+    margin-bottom: 18px;
+}
+
+.indicator-title {
+    color: #797979;
+}
+
+.indicator-wifi .indicator-detail,
+.indicator-guest .indicator-detail {
+    margin-top: 18px;
+}
+
+.indicator-detail {
+    color: #8FAE0F;
+}
+
+.indicator-off {
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+}
+
+.indicator-off .indicator-detail {
+    color: #D9D9D9;
+}
+
+.network-link {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    border: 2px solid #00A7BA;
+    width: 22%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #00A7BA;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.network-link:before {
+    content: "";
+    position: absolute;
+    border: 6px solid #FFF;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    border-radius: 25px;
+}
+
+.network-link.network-off {
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+}
+
+.link-adsl {
+    margin-left: -20px;
+}
+
+.link-3g {
+    margin-right: -20px;
+    right: 0;
+}
+
+.network-line {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px dotted #9FB629;
+}
+
+.network-line1 {
+    -webkit-transform: translateY(35%) translateX(-35%) rotate(45deg);
+}
+
+.network-line2 {
+    -webkit-transform: translateY(35%) translateX(35%) rotate(-45deg);
+}
+
+.network-line3 {
+    top: 50%;
+    border-top: 2px dotted #00A7BA;
+}

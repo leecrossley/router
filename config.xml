@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.presciense.veon" version="0.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Veon</name>
+    <description>Veon App</description>
+    <author email="office@presciense.com" href="http://presciense.com">
+        Presciense
+    </author>
+    <content src="index.html" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="750" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="BackgroundColor" value="0xff000000" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="21" />
+    <preference name="deployment-target" value="8.0" />
+    <preference name="Orientation" value="landscape" />
+    <preference name="Suppress3DTouch" value="true" />
+    <preference name="CrosswalkAnimatable" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="AutoHideSplashScreen" value="false" />
+        <preference name="SplashScreenDelay" value="30000" />
+        <preference name="ShowTitle" value="false" />
+        <preference name="Fullscreen" value="true" />
+        <preference name="android-manifest/@android:sharedUserId" value="android.uid.system" />
+        <preference name="android-manifest/@coreApp" value="true" />
+        <config-file parent="./application" target="AndroidManifest.xml">
+            <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            </activity>
+        </config-file>
+        <config-file parent="./application/activity/[@android:name='MainActivity']" target="AndroidManifest.xml">
+            <intent-filter android:label="@string/launcher_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <hook src="hooks/add-swift-support.js" type="after_prepare" />
+        <preference name="cordova-custom-config-autorestore" value="false" />
+        <preference name="KeychainAccessibility" value="Always" />
+        <preference name="AutoHideSplashScreen" value="false" />
+        <preference name="SplashScreenDelay" value="0" />
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <config-file mode="replace" parent="UISupportedInterfaceOrientations" platform="ios" target="*-Info.plist">
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+                <string>UIInterfaceOrientationPortraitUpsideDown</string>
+            </array>
+        </config-file>
+        <config-file mode="replace" parent="UISupportedInterfaceOrientations~ipad" platform="ios" target="*-Info.plist">
+            <array>
+                <string>UIInterfaceOrientationLandscapeLeft</string>
+                <string>UIInterfaceOrientationLandscapeRight</string>
+            </array>
+        </config-file>
+        <config-file parent="NSMainNibFile" platform="ios" target="*-Info.plist">
+            <string />
+        </config-file>
+        <config-file parent="NSMainNibFile~ipad" platform="ios" target="*-Info.plist">
+            <string />
+        </config-file>
+        <config-file mode="merge" parent="UIBackgroundModes" platform="ios" target="*-Info.plist">
+            <array>
+                <string>remote-notification</string>
+            </array>
+        </config-file>
+        <config-file parent="UIStatusBarHidden" platform="ios" target="*-Info.plist">
+            <true />
+        </config-file>
+        <config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios" target="*-Info.plist">
+            <false />
+        </config-file>
+    </platform>
+    <preference name="xwalkVersion" value="21+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="false" />
+    <plugin name="cordova-plugin-facebook4" spec="~1.9.1">
+        <variable name="APP_ID" value="1003656116363712" />
+        <variable name="APP_NAME" value="BT Smart Hub" />
+    </plugin>
+</widget>

@@ -1,0 +1,194 @@
+i.icon-menu-feedback {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-feedback.svg") 50% 50% / 30px auto no-repeat;
+}
+
+i.icon-menu-network {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-network.svg") 50% 50% / 27px auto no-repeat;
+}
+
+i.icon-menu-phone {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-phone.svg") 50% 50% / 30px auto no-repeat;
+}
+
+i.icon-menu-settings {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-settings.svg") 50% 50% / 30px auto no-repeat;
+}
+
+i.icon-menu-support {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-support.svg") 50% 50% / 30px auto no-repeat;
+}
+
+i.icon-menu-wifi {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-wifi.svg") 50% 50% / 28px auto no-repeat;
+}
+
+i.icon-menu-schedule {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-schedule.svg") 50% 50% / 24px auto no-repeat;
+}
+
+i.icon-menu-camera {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-camera.svg") 50% 50% / 40px auto no-repeat;
+}
+
+i.icon-menu-developer {
+    height: 30px;
+    width: 30px;
+    background: url("../img/menu-developer.svg") 50% 50% / 22px auto no-repeat;
+}
+
+i.icon-user {
+    width: 24px;
+    height: 24px;
+    background: url("../img/user.svg") 50% 50% / 24px auto no-repeat;
+}
+
+i.icon-settings {
+    width: 24px;
+    height: 24px;
+    background: url("../img/settings.svg") 50% 50% / 24px auto no-repeat;
+}
+
+i.icon-wifi {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/wifi.svg") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-wifi-2-4 {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/wifi-2-4.svg") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-wifi-5-0 {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/wifi-5-0.svg") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-wifi-guest {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/guest-wifi.svg") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-network-map {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/network-map.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-network-list {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/network-list.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-call-log {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/call-log.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-dialpad {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/dialpad.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-contacts {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/contacts.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-status {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/status.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-support {
+    width: 36px!important;
+    height: 36px!important;
+    background: url("../img/support.png") 50% 50% / 36px 36px no-repeat;
+}
+
+i.icon-phone-bills {
+    width: 40px;
+    height: 40px;
+    background: url("../img/phone-bills.png") 50% 50% / 22px auto no-repeat;
+}
+
+i.icon-line-activation {
+    width: 40px;
+    height: 40px;
+    background: url("../img/line-activation.png") 50% 50% / 30px auto no-repeat;
+}
+
+i.icon-speed-test {
+    width: 40px;
+    height: 40px;
+    background: url("../img/speed-test.png") 50% 50% / 28px auto no-repeat;
+}
+
+i.icon-diagnostics {
+    width: 40px;
+    height: 40px;
+    background: url("../img/diagnostics.png") 50% 50% / 28px auto no-repeat;
+}
+
+i.icon-call {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/call.svg") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-backspace {
+    width: 35px!important;
+    height: 35px!important;
+    background: url("../img/backspace.svg") 50% 50% / 35px 35px no-repeat;
+}
+
+i.icon-my-vodafone {
+    width: 80px;
+    height: 80px;
+    background: url("../img/my-vodafone.png") 50% 50% / 80px 80px no-repeat;
+}
+
+i.icon-notifications {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/notifications.png") 50% 50% / 40px 40px no-repeat;
+}
+
+i.icon-station {
+    width: 40px!important;
+    height: 40px!important;
+    background: url("../img/station.png") 50% 50% / 40px 40px no-repeat;
+}
+
+.list-block .item-link .item-inner {
+    background-image: url("../img/arrow.png");
+    background-size: 9px 16px;
+}
+
+.menu .list-block .item-link .item-inner {
+    background-size: 6px 11px;
+}

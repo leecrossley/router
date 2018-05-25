@@ -1,0 +1,6 @@
+.DS_Store
+
+obj/
+jni/libconsumer_client.so
+
+src/ios/*.a

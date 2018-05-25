@@ -1,0 +1,245 @@
+general:
+  error: XX XXXXX XXXXXXXX, XXXXXX XXX XXXXX
+  confirm_action:
+    message: XXX XXX XXXX XXX XXXX XX %(XXXXXX)XX
+    enable: XXXXXX
+    disable: XXXXXXX
+  notice: XXXXXX
+  confirm: XXXXXXX
+  cancel: XXXXXX
+  close: XXXXX
+  retry: XXXXX
+  update: XXXXXX %(property)s
+  change_to: XXXXXX XX %(property)s
+
+menu:
+  no_network: XX XXXXXXX
+  online: XXXXXX
+  offline: XXXXXXX
+  connected: XXXXXXXXX
+  disconnected: XXXXXXXXXXXX
+  new: XXX
+
+phone:
+  title: XXXXX
+  call_help: XXXXXX XXXXXX XX XXXX
+  cancel_call: XXXXXX
+  voip_call: XXXX XXX XXX
+  carrier_call: XXXX XXX XXXXXX XXXXXXX
+  calling: XXXXXXX...
+  connected: XXXXXXXXX...
+  mute: XXXX
+  speaker: XXXXXXX
+
+network:
+  title: XX XXXXXXX
+  adsl: XXXX
+  3g: XX
+  wifi: XXXXXXX XXXX
+  guest_wifi: XXXXX XXXX
+  phone: XXXXX
+  wired: XXXXX
+  devices:
+    zero: XX XXXXXXX
+    one: X XXXXXX
+    other: "%(count)s XXXXXXX"
+  lines:
+    zero: XX XXXXX
+    one: X XXXX
+    other: "%(count)s XXXXX"
+
+schedule:
+  title: XXXXXXXX
+
+support:
+  title: XXXX & XXXXXXX
+  phone_status: XXXXX XXXXXX
+  online: XXXXXX
+  offline: XXXXXXX
+  speed_test: XXXXX XXXX
+
+diagnostics:
+  title: XXXXXXXXXXX
+  results: XXXXXXX
+  no_results: XX XXXXXXX, XXXXXX XXX XXXXXXXXXXX
+  running: XXXXXXX XXXXXXXXXXX XXXXXXX...
+  run: XXX XXXXXXXXXXX
+  result:
+    code_8101: XX XXX XXXX XXXXXXXX.
+    code_8102: XXX XXXX XX XXX XXXXXX, XXXX XXXX X XXXXX XXXX XX XXX XXX.
+    code_8103: XXX XXXX XX XXX XXXX, XXX XXXX XXX XXXXXX.
+    code_8104: XX XXXXX XXXX.
+    code_8105: XXXXX XXXX XXXXXXX XXXXXXX.
+    code_8106: XXX XXXXXX XXXXXX.
+    code_8107: XX XXXX XXXXXXXXX.
+    code_8108: XX XXXXXXX XXXX XXXX XXXX.
+    code_8109: XXXXXXXXX XX XXX XXXXXX.
+    code_8110: XXXXXXXXX XXXXXXXXXXXX XXXXXX.
+    code_8111: XXXX XXXXXXXXXXXXXX XXXXXX, XXXXXXXX XXXXXXXX XX XXX XXXXX.
+    code_8112: XXXX XX XXX XXXX.
+    code_8113: XXXX XXXX XXXXX XXXXXX, XX XXXXXXX XXXXXXXX.
+    code_8114: XXXX XXXX XXXXX XXXXXXXXX, XXXX XXX XXXX XXXXXXX.
+    code_8115: XXXX XXXX XXXXX XXXXXX, XX XXXXXXX XXXXXXXX.
+    code_8116: XXXX XXXX XXXXX XXXXXXXXX, XXXX XXX XXXX XXXXXXX.
+    code_8117: XXXX XXXX XXXXX XXXXXX, XX XXXXXXX XXXXXXXX.
+    code_8118: XXXX XXXX XXXXX XXXXXXXXX, XXXX XXX XXXX XXXXXXX.
+    code_8119: XXXX XXXX XXXXX XXXXXX, XX XXXXXXX XXXXXXXX.
+    code_8120: XXXX XXXX XXXXX XXXXXXXXX, XXXX XXX XXXX XXXXXXX.
+    code_8121: XXXXX XXXXXXX XX XXX XXXXXX XXXX XXXX.
+    code_8122: XXXX XXXXXX XX XXX XXX.
+    code_8123: XXXXXXX XXX XXXXXXXXXXX XX XXX XXXX, XXXX XXXX XX% XXX XXXX XXXXX XX.
+    code_8124: XX XXXX XXXX XXXXXXXX.
+    code_8200: XX XXXXX XXX XXXX XXXXXXXX.
+
+feedback:
+  title: XXXXXXXX
+
+setup:
+  title: XXXXX
+  description: XXXXXXX XX XXXXXX XXXX...
+
+signin:
+  title: XXXX XX
+  description: XXXXXX XXXX XX XX XXXXXX XX XXXXXXX XXXX XXXX XXXXXXXXX XXXXXXXX.
+  facebook: XXXX XX XXXX XXXXXXXX
+  vk: XXXX XX XXXX XXXXXXXXX
+  google: XXXX XX XXXX XXXXXX
+  error: XXXXXX XX XXXX XX - XXXXXX XXX XXXXX
+
+settings:
+  title: XXXXXXXX
+  router:
+    title: XXXXXX XXXXXXXX
+    remoteaccess: XXXXXX XXXXXX
+    description: |
+      XXXX XXXXXXX, XXX XXX XXXXXX XXXX XXXXXX XXX XXXXXX XXXXXXXXXXXXX XXXX
+      XXXXXX XXXX XXXX XXXX XX XXXXXXXXX XX XXXXXXX XXXXXXX.
+    selection: |
+      XXX XXXX XXXXXX XX XXXX XXXX XXX XXXXXX, XXXXXX XX XXXXXXX XXXX
+    secondaryusers: |
+      XXXXXXXX XX XXXXXX XXXX XXXXXXX
+    returnhometoallow: XXXXXXXX XXX
+    approve: XXXXXXX
+    reject: XXXXXX
+    change: XXXXXX XX
+  notifications:
+    title: XXXXXXXXXXXXX
+    description: |
+      XXXXXX XXXXX XXXXXX XXX XXXXX XXXX XX XXXXXXX X XXXX XXXXXXXXXXXX XXX,
+      XXXXX XXXXXXXX XXX XXXXXXXX XX XXXX XXXXXX.
+    incomingcall: XXXXXXXX XXXXX
+    missedcall: XXXXXX XXXXX
+    wpsfinished: XXX XXXXXXXX
+    newdeviceconnected: XXX XXXXXX XXXXXXXXXX
+
+wifi:
+  title: XXXXXXX XXXX
+  enabled: XXXXXXX
+  disabled: XXXXXXXX
+  pairing: XXXXXXX
+  enable: XXXXXX
+  disable: XXXXXXX
+  pair: XXXXXXX XXXX
+  security: XXXXXXXX
+  no_password: XX XXXXXXXX
+  channel:
+    title: XXXXXXX
+    auto: XXXX
+    manual: XXXXXX
+    contention: XXXX XXXXXXXXXX
+  guest_wifi:
+    title: XXXXX XXXX
+    description: |
+      XXXXXXX X XXXXXXXX XXXXXXX XXXXXXX XXXX XXXXXXXX XXXXXXXX XXXXXX XX
+      XXXXXXXX XXXXXXX XXX XXXX XXXXXX.
+  hotspot:
+    title: XXXX XXXXXXX
+    description: |
+      XXX XXXX XXXXXXX XX XXXXX XXXXXX XXXX XXXXXXX XXXX XXXXXXXX XXXX XXXXXX
+      XX XXXXXXXX XX XXXXXXXX XXX XXXXXX XXX XXXXX.
+
+my_vodafone:
+  title: XX XXXXXXXX
+  open: XXXX
+  bills:
+    title: XXXXX XXXXX
+    description: |
+      XXXXX XX XXXXXXXX XX XXXXXX XXXX XXXXXXXXXX XXXXX, XXXX XXXXX,
+      XXXXX XXX XXXX XXX XXXX XXXX...
+  line:
+    title: XXXX XXXXXXXXXX XXXXXX
+    description: |
+      XX XXX XXX XXXXXXX XXX XXXX XXXX XXXXXXXXXX, XXX XXX XXXXX XXX
+      XXXXX XX XXXXXXXX XXXXXXX XX XXXXXXXX.
+  itunes: XXXXXXXXXXX
+  google_play: XXX.XXXXXXXXXXXXX
+
+camera:
+  title: XXXX XXXXXX
+  description: |
+    XXXXXXX XXXX XXXX XXXX XX XXXXX XXXXXXXXX XXXXX XX XXXX
+    XXXX XXXXX XXX XXX. XXXXX XXXXXXX XXXX XXX XXXXXX XX XXXX
+    XXXX XXX XXXXX XX XXXXX XXX XXXX.
+  buy: XXX XXX
+
+intro:
+  retry: XXXXXXXX
+  help:
+    title: XXXX
+    no_wifi:
+      title: XXXXXX XX XXXX XXXX XXXX XXXXXXXXXX.
+      description: |
+        XX XXXX XXXXXX XX XXXX XXXX XXXXXXXX XXXXXX XX XXXX XXXX XXXXXXX,
+        please try the following steps to resolve:
+      try0:
+        suggest: |
+          X. XXXXX XXXX XXX XXXXXX XX XXXXXXX XX XX XXX XXXXX, XXX XXXX
+          XXX XXXXXX XX XX XXXXXXXX XXX XXXXX XXX/XXXX XXXXXX XX XXX XXXX.
+        confirm: |
+          X XXX-XXXXX XXXXXX XX XXXXXXX XXXXX XXX XXXXXX. XXXXXX XXXX XXXXXX
+          XXX XXXXXX, XXX XXXXXX XXXXXXXXXX XXXXX.
+      try1:
+        suggest: |
+          X. XXXXX XXXX XXX XXXXXX XX XXXXXXX XX, XXXXXX XXXX XXX XXX/XXXX
+          XXXXXX XX XXX XXXX XX XXX XXXXXX XX XXXXXXX XX.
+        confirm: |
+          X XXX-XXXXX XXXXXX XX XXXXXXX XXXXX XXX XXXXXX. XXXXXX XXXX XXXXXX
+          XXX XXXXXX, XXX XXXXXX XXXXXXXXXX XXXXX.
+      try2:
+        suggest: |
+          X. XXXX XXXX XXXX XXX XXXXXXXXX XX XXX XXXX XXXXXXX XX XXX XXXXXX.
+          XXX XXXX XX XXXXX XX XXX XXXX XX XXX XXXXXX XXX XXXXXX XX XXX XXXX
+          XX XXXX XXXXX XX XXXXXX (XXXXXXXX XXX XXXXXXX XXXXXXX XXX XXXXXXX
+          XXXX XXXX XXX XXXXXXX).
+        confirm: |
+          XXXX XXXXX XX XXXXXX XXXXXX XX XXXXXXXXX XX XXX XXXXXXX XXXX XXXXXXX.
+          XXXXXX XXXX XXXXXX XXX XXXXXX, XXX XXXXXX XXXXXXXXXX XXXXX.
+    no_internet:
+      title: XXXXXX XX XXXXXXX XX XXXXXXXX.
+      description: |
+        XX XXXX XXXXXX XX XXXXXXX XX XXX XXXXXXXX, XXXXXX XXX XXX XXXXXXXXX
+        steps to resolve:
+      try0:
+        suggest: |
+          X. XXXXX XXXX XXX XXXXXX XX XXXXXXXXX XX XXX XXXXX XXXX, XX XXXXX
+          XX XXX XXXXXXX XXXXX.
+        confirm: |
+          XXXXXX XXXX XXX XXXXXX XXX XXXXXX, XXX XXXXXX XXXXXXXXXX XXXXX.
+      try1:
+        suggest: |
+          X. XXXXX XXXX XXXX XXXX XX XXXXXX XX XXX XXX XXXXXXXXX XXX.
+        confirm: |
+          XXXX XXXXXXXXX XXXXXX XXXXXXXXXX XXXXX.
+
+awaitingapproval:
+  title: XXXXXXXX XXXXXXXX XXXX XXXXX
+  description: |
+    XXX XXXXX XXX XXXX XXXXXXXX XX XXXX XXXXXXX XX XXXXXX XX XXXX XXXXXX. XX XXX XXX XXXXXXXX XXXX XXX XXXX XX XXXXXXX XXXXXX.
+
+secondaryapplication:
+  title: XXXXXX X XXXXXX
+  description: |
+    XXXX XXXXXX XXXXXXX XX XXXXXXX XXXX, XXX XXX XXXXXXX XX XXX XX
+  applyitem: XXXXXXX
+  apply: XXXXX
+  resend: XXXXXX

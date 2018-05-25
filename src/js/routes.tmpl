@@ -1,0 +1,16 @@
+/* @flow */
+
+import React from "react";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
+
+@imports
+
+const routes = (
+    <Router history={hashHistory}>
+        <Route path="/" component={@layout}>
+            @routes
+        </Route>
+    </Router>
+);
+
+export default routes;

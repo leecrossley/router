@@ -1,0 +1,14 @@
+[poltergeist]
+flow_control = "Software"
+tty = "ttyS0"
+simulation = true
+[certs]
+location = "/data/local/certs/gateway/"
+[store]
+location = "/data/local/"
+[mqtt]
+mqtt_keepalive = 150
+mqtt_reconnect = 3
+mqtt_broker = "api.oort.dev.presciense.io:8883"
+mqtt_listen = "0.0.0.0:8883"
+socket_listen = "/run/poltergeist-client"

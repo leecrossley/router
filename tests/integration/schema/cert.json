@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "errors": {
+            "id": "/properties/errors",
+            "items": {
+                "id": "/properties/errors/items",
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "result": {
+            "id": "/properties/result",
+            "properties": {
+                "cert": {
+                    "id": "/properties/result/properties/cert",
+                    "type": "string"
+                },
+                "der0": {
+                    "id": "/properties/result/properties/der0",
+                    "type": "string"
+                },
+                "der1": {
+                    "id": "/properties/result/properties/der1",
+                    "type": "string"
+                },
+                "key": {
+                    "id": "/properties/result/properties/key",
+                    "type": "string"
+                },
+                "pkcs12": {
+                    "id": "/properties/result/properties/pkcs12",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "pkcs12",
+                "der0"
+            ],
+            "type": "object"
+        },
+        "success": {
+            "id": "/properties/success",
+            "type": "boolean"
+        },
+        "messages": {
+            "id": "/properties/messages",
+            "items": {
+                "id": "/properties/messages/items",
+                "type": "string"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "success"
+    ],
+    "type": "object"
+}

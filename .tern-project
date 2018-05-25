@@ -1,0 +1,18 @@
+{
+  "ecmaVersion": 7,
+  "libs": [
+    "browser",
+    "mocha"
+  ],
+  "dontLoad": [],
+  "plugins": {
+    "complete_strings": {},
+    "node": {},
+    "commonjs": {},
+    "modules": {},
+    "es_modules": {},
+    "doc_comment": {
+      "fullDocs": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "layout": "SinglePageLayout",
+  "modules": [
+    {
+      "name": "Diagnostics",
+      "path": "diagnostics"
+    }
+  ]
+}

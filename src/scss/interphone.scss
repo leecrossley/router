@@ -1,0 +1,117 @@
+$red:		#D8232A;
+$grey:		#8A8B8A;
+
+$white: 	#FFF;
+
+body {
+	background: $white url("../img/interphone-background.jpg") 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.camera-container {
+    height: 21rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.sensor-container {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+
+    .indicators {
+        white-space: nowrap;
+        width: 46px !important;
+    }
+
+    .sub {
+        margin-top: 18px!important;
+        line-height: 0!important;
+        display: inline-block!important;
+    }
+
+    .leak-container > div {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+.appbar {
+    height: 50px;
+
+	img {
+		height: 2rem !important;
+		margin: 0.5rem 0 0 0.5rem;
+	}
+}
+
+.grid {
+	padding: 1rem!important;
+
+	> div {
+		margin: -0.5rem -0.5rem 0.5rem;
+
+		> div {
+			padding: 0.5rem !important;
+		}
+	}
+}
+
+.datetime {
+	position: relative;
+	right: 0.5rem;
+	top: -1px;
+
+	.time {
+		color: $grey;
+		font-size: 1.8em;
+		line-height: 50px;
+		float: left;
+		overflow: hidden;
+
+		span {
+			font-size: 0.4rem;
+			font-weight: 300;
+			vertical-align: top;
+			line-height: 100%;
+			top: 14px;
+			position: relative;
+		}
+	}
+
+	.date {
+		color: $grey;
+		float: left;
+		margin-left: 0.5rem;
+		line-height: 1;
+		position: relative;
+
+		span {
+			text-align: left;
+			font-size: 0.7rem;
+		}
+
+		.day {
+			font-weight: 700;
+			position: absolute;
+			top: 13px;
+		}
+
+		.monDate {
+			font-weight: 300;
+			position: relative;
+			left: 0;
+			top: 22px;
+		}
+	}
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

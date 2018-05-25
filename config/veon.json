@@ -1,0 +1,32 @@
+{
+  "layout": "BottomNavLayout",
+  "modules": [
+    {
+      "name": "Signin",
+      "path": "signin",
+      "props": {
+        "hideMenu": true
+      }
+    },
+    {
+      "name": "Home",
+      "path": "home"
+    },
+    {
+      "name": "Network",
+      "path": "network"
+    },
+    {
+      "name": "CameraBuy",
+      "path": "camera"
+    },
+    {
+      "name": "CameraBought",
+      "path": "camerabought"
+    },
+    {
+      "name": "Feedback",
+      "path": "feedback"
+    }
+  ]
+}
