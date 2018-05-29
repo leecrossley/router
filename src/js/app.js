@@ -30,7 +30,7 @@ const init = () => {
     }, 1000);
 
     ReactDOM.render(routes, document.getElementById("app"));
-    window.location.hash = "/signin";
+    window.location.hash = "/home";
 };
 
 const back = () => {
